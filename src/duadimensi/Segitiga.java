@@ -1,15 +1,17 @@
 package duadimensi;
 
-public class Segitiga extends Persegi {
-    Double tinggi;
+public class Segitiga {
+    //luas segitiga = alas * tinggi / 2
+    public Double alas;
+    public Double tinggi;
 
-    Segitiga(Double sisi, Double tinggi) {
-        super(sisi);
+    public Segitiga(Double alas, Double tinggi) {
+        this.alas = alas;
         this.tinggi = tinggi;
     }
 
-    @Override
+   
     public Double luas() {
-        return (lebar * tinggi) / 2;
+        return (alas * tinggi) / 2;
     }
 }
